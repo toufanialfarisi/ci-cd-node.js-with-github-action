@@ -1,0 +1,24 @@
+name: Project CI CD Node.JS With Github Action
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout workflow
+        uses: actions/checkout@v3
+
+      - name: setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: install dependency
+        run: npm install
+
+      - name: test app.js
+        run: npm test

@@ -1,0 +1,28 @@
+{
+  "name": "003.-ci-cd-node.js-with-github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "test": "jest src/app.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toufanialfarisi/ci-cd-node.js-with-github-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toufanialfarisi/ci-cd-node.js-with-github-action/issues"
+  },
+  "homepage": "https://github.com/toufanialfarisi/ci-cd-node.js-with-github-action#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.4.2",
+    "supertest": "^6.3.3"
+  }
+}
